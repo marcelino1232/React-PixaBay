@@ -41,3 +41,39 @@ html{
   overflow: visible;
   transition: opacity 1s ease-in-out;
 }
+
+.position{
+  width: fit-content;
+  font-size: 1rem;
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.msg-contaner{
+  position: relative;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    position: static;
+    opacity: 1;
+  }
+  100% {
+    position: static;
+    opacity: 0;/* Flips to none exactly when the animation finishes */
+  }
+}
+
+
+
+
+@media (max-width:768px) {
+  .position{
+    position: static;
+  }
+
+}
